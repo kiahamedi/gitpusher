@@ -1,6 +1,41 @@
 #!/bin/bash
 Blue='\033[0;36m'
 Green='\033[0;32m'
+
+if [ "$1" = "--help" ] ; then
+  echo "GitPusher"
+  echo "Version 1.0.0"
+  echo "A simple bash script to make it easier to work with the Github and Gitlab"
+  echo "source: https://github.com/kiahamedi/gitpusher/"
+  echo "Developer: Kia Hamedi"
+  echo "Email: kia.arta9793@gmail.com"
+  echo "  "
+  echo "First:"
+  echo "		git config --global user.email 'YourEmail@domain.com'"
+  echo "		git config --global user.name 'Git Account Name'"
+  echo "  "
+  echo "Run in directory:"
+  echo "		gitpusher"
+  exit 0
+fi
+
+if [ "$1" = "-h" ] ; then
+  echo "GitPusher"
+  echo "Version 1.0.0"
+  echo "A simple bash script to make it easier to work with the Github and Gitlab"
+  echo "source: https://github.com/kiahamedi/gitpusher/"
+  echo "Developer: Kia Hamedi"
+  echo "Email: kia.arta9793@gmail.com"
+  echo "  "
+  echo "First:"
+  echo "		git config --global user.email 'YourEmail@domain.com'"
+  echo "		git config --global user.name 'Git Account Name'"
+  echo "  "
+  echo "Run in directory:"
+  echo "		gitpusher"
+  exit 0
+fi
+
 echo -e "${Blue}Start GitPusher"
 git status
 sleep 1
