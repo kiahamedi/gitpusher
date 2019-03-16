@@ -1,0 +1,19 @@
+#!/bin/bash
+Blue='\033[0;36m'
+Green='\033[0;32m'
+echo -e "${Blue}Start GitPusher"
+git status
+sleep 1
+echo -e "${Blue}Check Status"
+sleep 1
+git add -A
+sleep 1
+echo -e "${Blue}Add files for commit"
+sleep 1
+git commit -m 'update via gitpusher'
+sleep 1
+echo -e "${Blue}Add meesage for commit"
+sleep 1
+git push
+sleep 1
+echo -e "${Green}done!" 
