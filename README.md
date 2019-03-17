@@ -5,7 +5,6 @@ A simple bash script to make it easier to work with the Github and Gitlab
 ArchLinux:</br>
 `yaourt -S gitpusher`</br>
 </br>
-</br>
 Debian,Ubuntu,Mint:</br>
 `git clone https://github.com/kiahamedi/gitpusher && cd gitpusher && sudo dpkg -i gitpusher_1.0.0.deb`
 
